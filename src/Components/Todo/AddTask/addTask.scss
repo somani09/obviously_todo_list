@@ -1,0 +1,19 @@
+.addTask{
+    background-color: beige;
+    position: relative;
+    width: 90%;
+    margin: 5px;
+
+    .tapButton{
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width:769px){
+
+    .addTask{
+        position: relative;
+        width: 90%;
+        margin:10px;
+    }
+}
