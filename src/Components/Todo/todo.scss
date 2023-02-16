@@ -1,0 +1,46 @@
+.todo{
+    position: relative;
+    align-items: center;
+    width: 90%;
+    margin: 5px;
+    background-color: grey;
+    border-radius: 10px;
+
+    .title{
+        font-size: 25px;
+        font-weight: bold;
+        margin: 10px;
+        margin-top: 20px;
+    }
+
+    .taskArea{
+        position: relative;
+        border-radius: 5px;
+        background-color: antiquewhite;
+        width: 90%;
+        margin: 10px 20px;
+        margin-bottom: 20px;
+    }
+
+}
+
+
+//pc
+@media screen and (min-width:769px){
+    .todo{
+        width: 50%;
+        margin: 30px;
+
+        .title{
+            font-size: 40px;
+            margin: 20px;
+        }
+
+        .taskArea{
+            width: 80%;
+            margin: 10px 20px;
+            margin-bottom: 40px;
+        }
+        
+    }
+}
