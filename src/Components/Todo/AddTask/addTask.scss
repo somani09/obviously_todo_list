@@ -1,12 +1,64 @@
 .addTask{
-    background-color: beige;
+    // background-color: beige;
     position: relative;
     width: 90%;
     margin: 5px;
 
     .tapButton{
         cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        // justify-content: center;
+        align-items: center;
+
+        .plus{
+            opacity: 60%;
+        }
+        
+        .addText{
+            margin-left: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            opacity: 60%;
+        }
     }
+
+    .inputArea{
+        width:90%;
+          
+        .buttonContainer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .add{
+                color: rgba(12, 46, 97, 0.8);
+                font-size: 10px;
+                width: 50px;
+                margin: 5px;
+            }
+
+            .close{
+                color: rgba(12, 46, 97, 0.8);
+                font-size: 10px;
+                width: 50px;
+
+            }
+        }
+
+        .inputBox{
+            width: 60%;
+            outline: none;
+            border: none;
+            background-color: inherit;
+            border: none;
+            border-bottom: 2px solid black;
+            margin-right: 10px;
+
+            
+        }
+    }
+
+
 }
 
 @media screen and (min-width:769px){
@@ -14,6 +66,61 @@
     .addTask{
         position: relative;
         width: 90%;
-        margin:10px;
+        margin:20px 20px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        .tapButton{
+            cursor: pointer;
+            display: flex;
+            flex-direction: row;
+            // justify-content: center;
+            align-items: center;
+    
+            .plus{
+                opacity: 60%;
+            }
+            
+            .addText{
+                margin-left: 10px;
+                font-size: 16px;
+                font-weight: bold;
+                opacity: 60%;
+            }
+        }
+    
+        .inputArea{
+            .buttonContainer{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                .add{
+                    font-size: 20px;
+                    width: 70px;
+                    margin: 10px;
+                    min-width: 50px;
+                }
+        
+                .close{
+                    font-size: 20px;
+                    width: 70px;
+                    min-width: 50px;
+                }
+            }
+
+            .inputBox{
+                width: 60%;
+                outline: none;
+                border: none;
+                background-color: inherit;
+                border: none;
+                border-bottom: 2px solid black;
+                margin-right: 20px;
+                font-size: 20px;
+                // opacity: 80%;
+                font-weight: 500;
+                color: rgba(12, 46, 97, 0.8);
+            }
+    }
     }
 }

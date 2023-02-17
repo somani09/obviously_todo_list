@@ -3,7 +3,7 @@
     align-items: center;
     width: 90%;
     margin: 5px;
-    background-color: grey;
+    background-color: rgba(23, 70, 144, 0.03);
     border-radius: 10px;
 
     .title{
@@ -11,12 +11,13 @@
         font-weight: bold;
         margin: 10px;
         margin-top: 20px;
+        opacity: 70%;
     }
 
     .taskArea{
         position: relative;
         border-radius: 5px;
-        background-color: antiquewhite;
+        // background-color: antiquewhite;
         width: 90%;
         margin: 10px 20px;
         margin-bottom: 20px;
@@ -30,6 +31,7 @@
     .todo{
         width: 50%;
         margin: 30px;
+        margin-top: 55px;
 
         .title{
             font-size: 40px;
@@ -37,7 +39,7 @@
         }
 
         .taskArea{
-            width: 80%;
+            width: 90%;
             margin: 10px 20px;
             margin-bottom: 40px;
         }

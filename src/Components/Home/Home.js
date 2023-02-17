@@ -4,11 +4,11 @@ import './home.scss'
 const Home = () => {
   return (
     <div className='home center-col'>
-        <div>
+        {/* <div>
         Home 
-        </div>
+        </div> */}
         
-        <div className='w100 center-col'>
+        <div className='w100 center-col mb-50'>
             <Todo />
         </div>
     </div>
