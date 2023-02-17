@@ -1,10 +1,128 @@
 .showTasks{
     position: relative;
-
+    margin: 20px;
+    font-size: 20px;
+    font-weight: bold;
     .task{
         position: relative;
         align-items: center;
 
+        .showContainer{
+            width: 100%;
+            .taskTitle{
+                width: 75%;
+                opacity: 50%;
+            }
+
+        }
+
+        .updateContainer{
+            width: 90%;
+
+            .inputUpdate{
+                width: 60%;
+                outline: none;
+                border: none;
+                background-color: inherit;
+                border: none;
+                border-bottom: 2px solid black;
+                margin-right: 10px;
+            }
+        }
     }
     
+    
+}
+
+//pc
+@media screen and (min-width:769px){
+
+    .showTasks{
+    
+        .task{
+
+            height: 50px;
+                    display: flex;
+                    align-items: center;
+
+            .showContainer{
+                    
+                .taskTitle{
+
+                }
+
+                .editDelete{
+                    .edit{
+                        color: rgba(12, 46, 97, 0.8);
+
+                        border: none;
+                        border-bottom:  3px solid rgba(12, 46, 97, 0.8); ;
+                        border-bottom-style:dotted;
+                        border-radius: 0;
+                        font-size: 20px;
+                        width: 70px;
+                        margin: 10px;
+                        min-width: 50px;
+                    }
+                    .delete{
+                        color: rgba(12, 46, 97, 0.8);
+                        border: none;
+                        border-bottom:  3px solid rgba(12, 46, 97, 0.8); ;
+                        border-bottom-style:dotted;
+                        border-radius: 0;
+                        font-size: 20px;
+                        width: 70px;
+                        min-width: 50px;
+                    }
+                }
+    
+            }
+
+            .updateContainer{
+                width: 100%;
+
+                .inputUpdate{
+                    width: 70%;
+                    outline: none;
+                    border: none;
+                    background-color: inherit;
+                    border: none;
+                    border-bottom: 2px solid black;
+                    margin-right: 20px;
+                    font-size: 20px;
+                    font-weight: 300;
+                    color: rgba(12, 46, 97, 0.7);
+                }
+
+                .update{
+                    color: rgba(12, 46, 97, 0.8);
+
+                    border: none;
+                    border-bottom:  3px solid rgba(12, 46, 97, 0.8); ;
+                    border-bottom-style:dotted;
+                    border-radius: 0;
+                    font-size: 20px;
+                    width: 70px;
+                    margin: 10px;
+                    min-width: 50px;
+                }
+
+                .cancel{
+                    color: rgba(12, 46, 97, 0.8);
+
+                    border: none;
+                    border-bottom:  3px solid rgba(12, 46, 97, 0.8); ;
+                    border-bottom-style:dotted;
+                    border-radius: 0;
+                    font-size: 20px;
+                    width: 70px;
+                    margin: 10px;
+                    min-width: 50px;
+                }
+            }
+    
+        }
+        
+        
+    }
 }

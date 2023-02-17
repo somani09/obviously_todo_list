@@ -30,22 +30,22 @@ const Task = ({task, list, setList}) => {
   }
 
   return (
-    <div className="task flex-row" >
+    <div className={ `task ${showInput?'center-row ':' flex-row'} ` }>
       { !showInput ?
-        <div>
-          <div>
-            {task.id} + {task.todo}
+        <div className='showContainer flex-row'>
+          <div className='taskTitle'>
+            {task.todo}
           </div>
-          <div>
-            <button onClick={()=>setShowInput(true)}>edit</button>
-            <button onClick={deleteData}>delete</button>  
+          <div className='editDelete'>
+            <button onClick={()=>setShowInput(true)} className="edit button">edit</button>
+            <button onClick={deleteData} className="delete button">delete</button>  
           </div>  
       </div> 
       :
-      <div>
-         <input value={input} onChange={e=>setInput(e.target.value)} />
-         <button onClick={updateData}>update</button>
-         <button onClick={cancel}>cancel</button>
+      <div className='updateContainer center-row'>
+         <input value={input} onChange={e=>setInput(e.target.value)} className="inputUpdate" />
+         <button onClick={updateData} className="update button">update</button>
+         <button onClick={cancel} className="cancel button">cancel</button>
       </div>
       
       }
