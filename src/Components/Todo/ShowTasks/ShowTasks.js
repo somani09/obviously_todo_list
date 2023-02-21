@@ -1,16 +1,35 @@
-import React from 'react'
+import React, {useContext, useEffect} from 'react'
 import './showTasks.scss'
 import Task from './Task'
-const ShowTasks = ({list, setList}) => {
-  console.log(list)
+
+import {TaskDataContext} from '../../../Context/TaskDataContextProvider'
+
+
+const ShowTasks = () => {
+
+
+ 
+
+  const {list} = useContext(TaskDataContext);
+
+  useEffect(() => {
+    console.log("list changed");
+  
+    return () => {
+      
+    }
+  }, [list])
+  
+
   return (
     <div className='showTasks '>
 
-      {list.map((task) => 
+    {list.length==0?<div className='nothing'>Guess you have nothing to do</div>:
+      list.map((task) => 
         (
-          <Task key={task.id} task={task} list={list} setList={setList} />
-        ))}
-
+          <Task key={task.id} task={task}/>
+        ))
+    }
     </div>
   )
 }

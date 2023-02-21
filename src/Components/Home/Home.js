@@ -6,8 +6,8 @@ const Home = () => {
     <div className='home center-col'>
         {/* <div>
         Home 
-        </div> */}
-        
+        </div>
+         */}
         <div className='w100 center-col'>
             <Todo />
         </div>
