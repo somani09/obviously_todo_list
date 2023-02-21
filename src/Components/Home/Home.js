@@ -8,7 +8,7 @@ const Home = () => {
         Home 
         </div> */}
         
-        <div className='w100 center-col mb-50'>
+        <div className='w100 center-col'>
             <Todo />
         </div>
     </div>

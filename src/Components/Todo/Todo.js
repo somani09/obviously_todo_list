@@ -2,6 +2,9 @@ import React, { useState } from 'react'
 import AddTask from './AddTask/AddTask'
 import ShowTasks from './ShowTasks/ShowTasks'
 import './todo.scss'
+
+const UserContext = React.createContext();
+
 const Todo = () => {
 
 

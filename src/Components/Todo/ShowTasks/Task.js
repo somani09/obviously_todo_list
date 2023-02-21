@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 const Task = ({task, list, setList}) => {
 
   const [showInput, setShowInput] = useState(false);
-  const [input, setInput] = useState("");
+  const [input, setInput] = useState(task.todo);
 
   const updateData = () =>{
     let objIndex = list.findIndex((obj => obj.id == task.id));
@@ -19,7 +19,7 @@ const Task = ({task, list, setList}) => {
 
   const cancel = () =>{
     setShowInput(false);
-    setInput("");
+    // setInput("");
   }
 
   const deleteData = () =>{

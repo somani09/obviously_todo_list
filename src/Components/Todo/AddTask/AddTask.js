@@ -24,7 +24,7 @@ const AddTask = ({list, setList}) => {
             <input value={input} onChange={e=>setInput(e.target.value)} className="inputBox" />
             <div className='buttonContainer'>
               <button className='add button' onClick={()=>addData()} >add</button>
-              <button className='close button' onClick={()=>setShowInput(prev=>!prev)}>close</button>
+              <button className='close button' onClick={()=>{setShowInput(prev=>!prev); setInput('')}}>close</button>
             </div>
             
         </div>
